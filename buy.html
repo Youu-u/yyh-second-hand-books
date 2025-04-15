@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Books - YYH Second Hand Books</title>
+    <title>Buy a Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,43 +22,33 @@
     <main>
         <section>
             <h2>Buy a Book</h2>
-            <p>Fill out the form below to buy a second-hand book. We'll arrange a pickup on campus!</p>
+            <p>Fill out the form to order. We'll prepare your book with your name and class, ready at your chosen pickup point.</p>
             <form id="buy-form">
                 <label for="buyer_name">Your Name:</label>
                 <input type="text" id="buyer_name" name="buyer_name" required>
-
-                <label for="buyer_email">Your School Email:</label>
+                <label for="buyer_email">Email:</label>
                 <input type="email" id="buyer_email" name="buyer_email" required>
-
-                <label for="buyer_grade">Your Grade:</label>
-                <select id="buyer_grade" name="buyer_grade" required>
-                    <option value="Grade 9">Grade 9</option>
-                    <option value="Grade 10">Grade 10</option>
-                    <option value="Grade 11">Grade 11</option>
-                    <option value="Grade 12">Grade 12</option>
-                </select>
-
+                <label for="buyer_grade">Grade/Year:</label>
+                <input type="text" id="buyer_grade" name="buyer_grade" required>
                 <label for="book_title">Select Book:</label>
                 <select id="book_title" name="book_title" required>
-                    <option value="">--Select a Book--</option>
-                    <!-- Options will be populated by script.js -->
+                    <option value="">-- Select a book --</option>
                 </select>
-
                 <label for="pickup">Pickup Location:</label>
                 <select id="pickup" name="pickup" required>
-                    <option value="Library">Library</option>
-                    <option value="Cafeteria">Cafeteria</option>
-                    <option value="Main Gate">Main Gate</option>
+                    <option value="Nevil Wing">Nevil Wing 1st Floor Reception</option>
+                    <option value="NLC">NLC 1st Floor Reception</option>
                 </select>
-
                 <button type="submit">Submit Order</button>
-                <a id="pay-now-button" href="https://www.paypal.com" target="_blank" style="display: none;" class="faq-button">Pay Now</a>
             </form>
+            <p>After submitting, click the button below to pay via PayPal. You MUST include your Book ID in the payment note, or we cannot process your order! If you forget to include the Book ID, email us at your-school-email@school.com with your book title. Alternatively, pay via CommBank (BSB: 063-109, Account: 13491370)—email us the payment screenshot with your Book ID to your-school-email@school.com. Contact us anytime via school email or Teams!</p>
+            <a id="pay-now-button" href="your-paypal-link" class="faq-button" style="display: none;">Pay Now via PayPal</a>
         </section>
     </main>
     <footer>
         <p>Run by Daisy Yang and Yuhan Yang. Contact us via school email or Teams.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
