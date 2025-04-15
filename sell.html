@@ -2,20 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sell Your Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell to YYH - YYH Second Hand Books</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Sell a Book</h2>
-    <form>
-        <label>Book Title</label><input type="text" required>
-        <label>Author</label><input type="text" required>
-        <label>Condition</label><input type="text" required>
-        <label>Price</label><input type="number" required>
-        <label>Your Name</label><input type="text" required>
-        <label>Bank Details</label><input type="text" required>
-        <label>Email</label><input type="email" required>
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <a href="index.html"><img src="https://i.imgur.com/hHFU73F.png" alt="YYH Logo" class="logo"></a>
+        <h1>YYH Second Hand Books</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="sell.html">Sell to YYH</a>
+            <a href="buy.html">Buy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:your-school-email@school.com">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sell Your Book to YYH</h2>
+            <p>Fill out the form below to sell your second-hand book. We'll arrange a pickup on campus!</p>
+            <form id="sell-form">
+                <label for="seller_name">Your Name:</label>
+                <input type="text" id="seller_name" name="seller_name" required>
+
+                <label for="book_title">Book Title:</label>
+                <input type="text" id="book_title" name="book_title" required>
+
+                <label for="grade">Grade (if applicable):</label>
+                <select id="grade" name="grade">
+                    <option value="">Not specified</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                </select>
+
+                <label for="bank_account">Bank Account Number (for payment):</label>
+                <input type="text" id="bank_account" name="bank_account" required>
+
+                <label for="contact_info">Your Contact Info (School Email or Teams ID):</label>
+                <input type="text" id="contact_info" name="contact_info" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Run by Daisy Yang and Yuhan Yang. Contact us via school email or Teams.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
