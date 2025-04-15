@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell to YYH - YYH Second Hand Books</title>
+    <title>Sell to YYH</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,29 +22,18 @@
     <main>
         <section>
             <h2>Sell Your Book to YYH</h2>
-            <p>Fill out the form below to sell your second-hand book. We'll arrange a pickup on campus!</p>
+            <p>Fill out the form below to sell your book. We'll arrange a pickup on campus and contact you for details.</p>
             <form id="sell-form">
                 <label for="seller_name">Your Name:</label>
                 <input type="text" id="seller_name" name="seller_name" required>
-
                 <label for="book_title">Book Title:</label>
                 <input type="text" id="book_title" name="book_title" required>
-
-                <label for="grade">Grade (if applicable):</label>
-                <select id="grade" name="grade">
-                    <option value="">Not specified</option>
-                    <option value="Grade 9">Grade 9</option>
-                    <option value="Grade 10">Grade 10</option>
-                    <option value="Grade 11">Grade 11</option>
-                    <option value="Grade 12">Grade 12</option>
-                </select>
-
-                <label for="bank_account">Bank Account Number (for payment):</label>
+                <label for="grade">Grade/Year (Optional):</label>
+                <input type="text" id="grade" name="grade">
+                <label for="bank_account">Bank Account Details (BSB and Account Number):</label>
                 <input type="text" id="bank_account" name="bank_account" required>
-
-                <label for="contact_info">Your Contact Info (School Email or Teams ID):</label>
+                <label for="contact_info">Contact Info (School Email or Teams):</label>
                 <input type="text" id="contact_info" name="contact_info" required>
-
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -52,6 +41,7 @@
     <footer>
         <p>Run by Daisy Yang and Yuhan Yang. Contact us via school email or Teams.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
