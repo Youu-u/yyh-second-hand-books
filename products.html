@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Books - YYH Second Hand Books</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,13 +21,13 @@
     </header>
     <main>
         <section>
-            <h2>Shop Books</h2>
+            <h2>Shop Our Collection</h2>
+            <p>Find second-hand books for your grade. Filter by grade or search by title.</p>
             <div class="filter-search">
-                <input type="text" id="search" placeholder="Search books..." oninput="searchBooks()">
+                <input type="text" id="search" placeholder="Search by title..." onkeyup="searchBooks()">
                 <label for="grade-filter">Filter by Grade:</label>
                 <select id="grade-filter" onchange="filterBooks('grade', this.value)">
                     <option value="all">All Grades</option>
-                    <option value="Grade 9">Grade 9</option>
                     <option value="Grade 10">Grade 10</option>
                     <option value="Grade 11">Grade 11</option>
                     <option value="Grade 12">Grade 12</option>
@@ -41,7 +41,7 @@
                     <p>Price: $60</p>
                     <a href="buy.html" class="faq-button">Buy Now</a>
                 </div>
-                <!-- Add more books here as they become available -->
+                <!-- Add more books here as they are added -->
             </div>
         </section>
     </main>
