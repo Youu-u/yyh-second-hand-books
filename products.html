@@ -2,11 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Books - YYH Second Hand Books</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Available Books</h2>
-    <p>Products will be listed here in the future.</p>
+    <header>
+        <a href="index.html"><img src="https://i.imgur.com/hHFU73F.png" alt="YYH Logo" class="logo"></a>
+        <h1>YYH Second Hand Books</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="sell.html">Sell to YYH</a>
+            <a href="buy.html">Buy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:your-school-email@school.com">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Shop Books</h2>
+            <div class="filter-search">
+                <input type="text" id="search" placeholder="Search books..." oninput="searchBooks()">
+                <label for="grade-filter">Filter by Grade:</label>
+                <select id="grade-filter" onchange="filterBooks('grade', this.value)">
+                    <option value="all">All Grades</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                </select>
+            </div>
+            <div class="book-list">
+                <div class="book" data-title="Math Textbook" data-grade="Grade 10">
+                    <h3>Math Textbook</h3>
+                    <p>Condition: Good</p>
+                    <p>Grade: 10</p>
+                    <p>Price: $60</p>
+                    <a href="buy.html" class="faq-button">Buy Now</a>
+                </div>
+                <!-- Add more books here as they become available -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Run by Daisy Yang and Yuhan Yang. Contact us via school email or Teams.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
