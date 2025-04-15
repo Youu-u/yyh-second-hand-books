@@ -2,17 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Buy a Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Books - YYH Second Hand Books</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Buy a Book</h2>
-    <form>
-        <label>Book</label><select><option>Select Book</option></select>
-        <label>Pickup Location</label><input type="text" required>
-        <label>Full Name</label><input type="text" required>
-        <label>Email</label><input type="email" required>
-        <button type="submit">Pay Now via PayPal</button>
-    </form>
+    <header>
+        <a href="index.html"><img src="https://i.imgur.com/hHFU73F.png" alt="YYH Logo" class="logo"></a>
+        <h1>YYH Second Hand Books</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="sell.html">Sell to YYH</a>
+            <a href="buy.html">Buy</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:your-school-email@school.com">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Buy a Book</h2>
+            <p>Fill out the form below to buy a second-hand book. We'll arrange a pickup on campus!</p>
+            <form id="buy-form">
+                <label for="buyer_name">Your Name:</label>
+                <input type="text" id="buyer_name" name="buyer_name" required>
+
+                <label for="buyer_email">Your School Email:</label>
+                <input type="email" id="buyer_email" name="buyer_email" required>
+
+                <label for="buyer_grade">Your Grade:</label>
+                <select id="buyer_grade" name="buyer_grade" required>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                </select>
+
+                <label for="book_title">Select Book:</label>
+                <select id="book_title" name="book_title" required>
+                    <option value="">--Select a Book--</option>
+                    <!-- Options will be populated by script.js -->
+                </select>
+
+                <label for="pickup">Pickup Location:</label>
+                <select id="pickup" name="pickup" required>
+                    <option value="Library">Library</option>
+                    <option value="Cafeteria">Cafeteria</option>
+                    <option value="Main Gate">Main Gate</option>
+                </select>
+
+                <button type="submit">Submit Order</button>
+                <a id="pay-now-button" href="https://www.paypal.com" target="_blank" style="display: none;" class="faq-button">Pay Now</a>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Run by Daisy Yang and Yuhan Yang. Contact us via school email or Teams.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
